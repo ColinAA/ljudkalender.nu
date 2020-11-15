@@ -22,6 +22,10 @@
    color: #000 !important;
    font-family: 'Open Sans', sans-serif;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 	  </style>
   </head>
   <body class="bg-danger p-2">
@@ -58,16 +62,14 @@
   </div>
   
 	<!-- Logga -->
-	<div class="text-center loggan">
-    <img src="testlogo.png" width="auto" height="auto" class="" alt="" loading="lazy">
+	<div class="text-center">
+    <img src="testlogo.png" width="auto" height="50%" class="" alt="" loading="lazy">
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Lämna en julhälsning!
+</button>
+	
 	</div>
-	<!-- Spacing -->
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
+
 	
 	
 </div>
@@ -138,12 +140,9 @@
   </div>
   <br>
 
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-  Lämna en julhälsning!
-</button>
 
-<!-- Modal -->
+
+
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" width="1000px" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
