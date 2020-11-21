@@ -24,6 +24,11 @@
    color: #000 !important;
    font-family: 'Open Sans', sans-serif;
 }
+.present {
+max-width: 30%;
+max-height: 30%;
+}
+
 	  </style>
   </head>
   <body class="bg-danger p-2">
@@ -64,23 +69,24 @@
 	<!-- Logga -->
 	<div class="text-center">
     <img src="testlogo.png"  width="50%" height="20%" alt="" loading="lazy">
-	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">
- <i class="far fa-comments"></i>
-</button>
+	
 <br>
-	<img src="presenter.png" width="20%">
+	<img class="present" src="presenter.png" width="auto" height="auto">
 	</div>
 	<br> 
+	<div class="col text-center">
+     <button type="button" class="btn btn-danger center" data-toggle="modal" data-target="#exampleModalCenter">
+ <i class="fas fa-gift"></i> <p> Julhälsningar </p>
+</button>
+    </div>
 	
 	
 
 	
 	
 </div>
-<div class="commentbox">
 
-
-</div>
+<br>
     <div class="jumbotron jumbotron-fluid bg-success">
 		<div class="container">
 			<h1 class="display-4">Välkommen till ljudkalendern!</h1>
