@@ -22,6 +22,43 @@
 	
     <title>ljudkalender.nu</title>
 	
+	<script language=javascript>
+    var rev = "fwd";
+    function titlebar(val){
+        var msg  = "ljudkalender.nu";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "   ❆❄"+msg+"❄❆";
+        var le = msg.length;
+        if(rev == "fwd"){
+            if(pos < le){
+                pos = pos+1;
+                scroll = msg.substr(0,pos);
+                document.title = scroll;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "bwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+        else {
+            if(pos > 0) {
+                pos = pos-1;
+                var ale = le-pos;
+                scrol = msg.substr(ale,le);
+                document.title = scrol;
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+            else {
+                rev = "fwd";
+                timer = window.setTimeout("titlebar("+pos+")",speed);
+            }
+        }
+    }
+    titlebar(0);
+</script>
 	  
 	  <style type="text/css">
 			.DateRange, .DateDiv { display: none; }
@@ -300,7 +337,7 @@ Den här låten skrevs till musikalen "Mame" på Broadway och framfördes först
   <div class="card bg-danger">
   <div class="card-body">
     <h3 class="card-title">15 december.<br> Guster - Mamacita, ¿Dónde Está Santa Claus?</h3>
-    <p class="card-text">1958 spelades den här låten in för första gången av en då 12-årig Augie Rios.<br>Denna lite mer ruffa version framförs av bandet Guster, ett amerikanskt band från Bostonn. Den blev snabbt en favorit hos mig och så får man ju lära sig lite spanska också...Är det någon som förstår titeln?
+    <p class="card-text">1958 spelades den här låten in för första gången av en då 12-årig Augie Rios.<br>Denna lite mer ruffa version framförs av bandet Guster, ett amerikanskt band från Boston. Den blev snabbt en favorit hos mig och så får man ju lära sig lite spanska också...Är det någon som förstår titeln?
 </p>
    <audio controls controlsList="nodownload">
   <source src="songs/15.mp3" type="audio/mpeg">
@@ -456,19 +493,7 @@ Här har han tagit sig an en riktigt klassisk julsång. Den skrevs av John Henry
       </div>
       <div class="modal-body" width="auto">        
 			<div id="wpac-comment"></div>
-<script type="text/javascript">
-wpac_init = window.wpac_init || [];
-wpac_init.push({widget: 'Comment', id: 28202});
-(function() {
-    if ('WIDGETPACK_LOADED' in window) return;
-    WIDGETPACK_LOADED = true;
-    var mc = document.createElement('script');
-    mc.type = 'text/javascript';
-    mc.async = true;
-    mc.src = 'https://embed.widgetpack.com/widget.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-})();
-</script>
+<div class="powr-comments" id="dbe37e99_1606747402"></div><script src="https://www.powr.io/powr.js?platform=html"></script>
 
       </div>
      
